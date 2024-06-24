@@ -27,7 +27,7 @@ body {
   border-radius: 40px;
   background-size: auto 100%;
   background-position: center;
-  height: 90vh;
+  height: 80vh;
   position: relative;
   margin: 5px;
   color: #fff;
@@ -53,16 +53,29 @@ body {
 .click h3 {
   opacity: 1;
 }
+.copy {
+  display: flex;
+  position: absolute;
+  top: 5;
+  font-size: 25px;
+}
 
 @media (max-width: 600px) {
   .container {
     width: 100vw;
+    overflow: hidden;
   }
 
-  
+  .card-container {
+    height: 70vh;
+  }
 
   .card-container:nth-of-type(4),
   .card-container:nth-of-type(5) {
     display: none;
+  }
+
+  .copy {
+    font-size: 15px;
   }
 }
