@@ -1,6 +1,6 @@
 const click = document.querySelectorAll(".card-container");
 
-click.forEach((card) => {
+click.forEach(card => {
   card.addEventListener("click", () => {
     RemoveClassClick()
     card.classList.add("click")
